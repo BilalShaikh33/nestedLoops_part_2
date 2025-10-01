@@ -110,27 +110,52 @@
 
 
 
+        // var arr =
+        // [
+        //     [1, 2, 3],
+        //     [4, 5, 6],
+        //     [7, 8, 9]
+        // ]
+        // var min = arr.length 
+      
+        //     for (var i = 0; i < arr.length; i++) {
+        //       for (var j = 0; j < arr[i].length; j++) {
+
+        //        if (arr[i][j] <  min) {
+        //         min = arr[i][j]
+                
+        //        }
+
+
+        //       }
+
+        //     }
+        //     console.log(min)
+
+
+
+        
         var arr =
         [
             [1, 2, 3],
             [4, 5, 6],
             [7, 8, 9]
         ]
-        var min = arr.length 
+        var count = 0
       
             for (var i = 0; i < arr.length; i++) {
               for (var j = 0; j < arr[i].length; j++) {
 
-               if (arr[i][j] <  min) {
-                min = arr[i][j]
+               if (arr[i][j] % 2 === 0   ) {
+                count++
+               
                 
                }
 
-
               }
-
             }
-            console.log(min)
+            console.log("There are " , count , " even numbers in array")
+
 
 
 
